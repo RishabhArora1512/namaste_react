@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Search from "./Search"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Body = () => {
@@ -31,6 +32,9 @@ const Body = () => {
     // }
 
     // const {id, avgRating} = resList?.data?.cards[4]?.card?.card?.gridElements?.restaurants?.info;
+
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false) return <h1>Offline currently Vro</h1>
 
     return resList.length === 0 ? (<Shimmer/>) : (<div className="body">
         <div className="filter">
