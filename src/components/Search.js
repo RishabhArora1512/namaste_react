@@ -2,21 +2,22 @@ import { useState } from "react";
 
 const Search = (props)=>{
 
-    console.log(props.resList);
+    // console.log(props.resList);
     // const {resList} = props;
     const [searchTerm, setSearchTerm] = useState('');
     const [resList, setResList] = useState(props.resList);
+    const [filteredResList, setFilteredResList] = useState([]);
     const handleChange = (e) =>{
         console.log(e.target.value);
         setSearchTerm(e.target.value);
     }
     // const arr = 
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = () =>{
         // console.log(Object.values(resList));
-        const filterdList = resList.filter((restaurant) => restaurant.resName.toLowerCase().includes(searchTerm.toLowerCase()));
+        const filterdList = resList.filter((restaurant) => restaurant.resName.toLowerCase() === searchTerm.toLowerCase());
         console.log("Filtered list is: "+JSON.stringify(filterdList));
-        setResList(filterdList);
+        setFilteredResList(filterdList);
     }
 
     return (

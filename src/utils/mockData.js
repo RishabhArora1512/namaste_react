@@ -1,11 +1,11 @@
 const resObj = [{
-    "id": 1,
+    "id": 425,
     "resName":"Meghana Foods",
     "cuisines":["Biryani", "North Indian", "Asian"],
     "costForTwo":40000,
     "avgRating":4.4
 },{
-    "id": 2,
+    "id": 224,
     "resName":"KFC",
     "cuisines":["Burgers", "Fries", "Unhealthy"],
     "costForTwo":80000,
