@@ -5,7 +5,7 @@
 // );
 import React, {lazy, Suspense} from "react";
 import ReactDOM from "react-dom/client";
-import '../style.css';
+// import '../style.css';
 import Header from './components/Header.js';
 import Body from './components/Body.js';
 import About from "./components/About.js";

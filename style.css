@@ -1,4 +1,4 @@
-.header{
+/* .header{
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
@@ -23,7 +23,6 @@
     width: 200px;
     height: 350px;
     margin: 5px;
-    /* border: 1px solid black; */
 }
 
 .res-card:hover{
@@ -63,9 +62,8 @@
 }
 
 .login{
-    /* margin-right: 3px; */
     height: 20px;
     padding: 0 20px;
     margin: 10px;
     cursor: pointer;
-}
+} */
