@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../index.css"
 
 const Search = (props)=>{
 
@@ -21,9 +22,9 @@ const Search = (props)=>{
     }
 
     return (
-        <div className="search">
-            <input type="text" value={searchTerm} onChange={handleChange}/>
-            <button onClick={handleSubmit}>Search</button>
+        <div className="search m-4 p-4">
+            <input className="border border-solid border-black px-2" type="text" value={searchTerm} onChange={handleChange}/>
+            <button className="px-4 py-1 bg-green-100 mx-4" onClick={handleSubmit}>Search</button>
         </div>
     );
 }

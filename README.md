@@ -93,3 +93,14 @@
 * - Search, RestaurantContainer, RestCard - img, cuisine,star rating, nameof res, 
 * 
 */
+
+
+
+# Redux Toolkit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our own store
+- Connect store to the app
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
